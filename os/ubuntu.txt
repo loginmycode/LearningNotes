@@ -1,0 +1,320 @@
+ls --help  It gives which command will support and availble in terminal
+
+
+sudo apt update
+
+pwd : Present working directory
+whoami : which user using pwd
+date : for details of date
+Custom date check
+date +%D  date only
+date +%T time only
+date +%H hour only
+date +%M min only 
+
+ls list the files 
+ls -lt list with details
+ls -ltr list deatil with modify
+ls lh readble format
+
+clear clear the terminal
+ctrl+l clear the terminal
+
+cat filename (abc.txt) show the content in the file
+less filename(abc.txt)  Search the content in the file 
+    -> /<search the word>
+    -> n for next word 
+    -> shift+g bottom to top
+    -> p for bottom to direct top
+    -> ? <word> it will search bottom to top
+more <filename>  Read line by line
+
+-----------------------------------creating file ----------------------------------
+touch <filename> create file
+rm <filename> remove file
+
+
+-----------------------------------Writng in the file ----------------------------------
+
+vi <filename> or vi <newfile> Edit the file
+or
+nano <filename>  is the best to edit the file
+  -> i press for inserting the content
+  ->escape for coming out 
+  ->shf+: last line of the page
+  -> wq save the page
+
+  ---------------------------------Creating folder---------------------------------------------------
+  mkdir <foldername> create folder
+  rm <foldername>   remove folder
+  or 
+  rm -rf<foldername> remove folder
+
+  ------------------------------_Change path and move other folder-------------------------------------------
+cd <foldername> change directory
+    ex: cd <foldername>
+        cd<foldername>/<foldername>/foldername>  going inside the folder multi level
+cd .. going back one by one folder
+cd ../.. going back two folder at a time
+cd ../../../.. going back multifolder as you want
+
+
+
+
+-------------------------_Root path absolute path and relative path---------------------------------
+cd /   it gives root path
+cd /foldername/foldrname  going to absolutr path
+
+
+--------------------------------Copy folder from one to other folder--------------------------------
+
+cp foldername newfoldername
+cp filename newfilename    duplicate file
+mv filename foldername   copy paste
+
+
+---------------------------------rename-----------------------
+mv <filename> <newname> rename the file
+mv <foldrname> <newname>  rename folder
+
+
+
+--------------------------Reading top <number lines> lines-------------------------
+head -<number> <filename>  top lines
+tail -<number> <filename>  last lines
+
+
+-------------------Sorting and split file -------------
+sort <filename>
+sort -r <filename>
+split -l <number> <filename>
+
+
+
+-----------------------create multifle file-------------------------------------
+touch file{1..10} It creates 10 files
+rm <filname>  It remove single file
+rm -i <filenames> it remove multifiles
+
+
+
+s---------------------huffle the files---------------------
+shuf <filename>
+
+
+---------------------------------Count number of lines --------------------------
+wc -l <filename>
+------------------compare two files---------------------------------
+diff -u fileA fileB
+comp <file1> <file>
+
+-----------------------------------Find file location-----------------------
+
+locate <filename>
+
+->if not working updtedb 
+-> sudo apt install plocate install it
+
+
+-------------------------FInd all commands u used--------------------------
+history -> it show all commands till used
+history | grep <givename> it sort and give which commands ur looking
+
+
+------------------------calender------------------------------------
+sudo apt install ncal  for calender (if not working onlt)
+cal JAN 2024
+
+
+
+---------------------------zip file and folder----------------------------
+gzip -k <filename>  zip
+gunzip -k <filename>
+
+ar -czf copress.tar.gz newfolder
+ar -xzf copress.tar.gz newfolder
+
+
+
+------------------------------How to install application --------------------------------------
+sudo apt install <application>
+ex:-  sudo apt install nginx
+apt or yum'
+apt install <application name>  ubuntu 
+yum install <application name>  redhat ......
+
+
+--------------------Check installed software-------------------------------------
+rpm -qa | grep sql
+dnf list installed | grep
+
+
+------------------------check installed package name----------------------------------------------------
+yupy search packagename
+yum /dnf list availble
+
+
+----------------------------How to start and stop service (status)-------------------
+systemctl status <servicename>
+systemctl start/stop servicename
+sytemctl strt servicename.service
+systemctl stop servicename.service
+
+--List all services--------------
+
+systemctl list-units --type=service --all
+
+
+---------------existing enviornament variables----------------------
+printenv
+
+---add new env veriables-----------
+export JAVA_HOME="/usr/lib/jvm/java_v
+export PATH=$JAVA_HOME:$PATH
+
+
+--------------------How to print particular column from specific file--------------
+awk -F , '{print $2}' filname
+
+
+---------------print starting 2 char from each line --------------------
+cut -c-2 <filename>
+cut -c2-3 <filname>
+cut -c-4 <filename>
+--------------display specific line from file----------------
+
+sed -n '<number p>' <filename>
+sed -n '5p' <filename> dislpay the 5th line of file
+sed -n 'p' <filenaem> display whole file
+------------------How to replcae specific word in file--------------
+
+sed  's/from/to/g' <filename>
+
+------------change size of file-------------
+turncate -s size filename
+turncate -s 50M <filename>
+
+------------display following line vertical-------------
+echo "word" | fold -w1
+
+-------------------_How to change user or login as diffrent user---------------------
+su <username>
+
+---------------If ur not root user how to execute admin commands like installing new apps -----------
+sudo yum install httpd
+
+----------------------Access remote servers ----------------------------------
+ssh user@hostname
+
+---------------------_How to check permission of file --------------------
+ls -ltr
+--> rwx is for user
+--> rw- is for group
+--> r-- for oter
+-----------------modify permission of file-------------
+chmod a+rwx <filenamme>  (cahnge mode)
+chmod o+r filname   it give permission to other
+u- user, g - group o - other
+a - all
+
+----------Change ownership of the file --------------------------
+
+chown username filename
+
+-----------memory----------
+free         check ram memory
+free -the
+--------memory and cpu utilization--------------
+top 
+
+-----------disk utilization-------
+du foldername
+
+-------------------
+arch check architecture
+
+lsblk list of storage devices disk partitions on ubuntu
+
+---- ------------------see the os name of linux ---------------------
+uname -a 
+cat /etc/os-release 
+
+-------------------process management--------------------
+ps -ef
+ps -ef | grep java
+ps -ef | grep nginx
+
+
+-----------------------get PID of process---------------------
+pgrep chron
+
+---------------------How to stop a process by by PID---------------------
+
+kill -9 PID
+
+
+------------------stop a process by name------------
+pkill httpd
+
+-------------------------sleep--------------
+sleep 10 s 
+            to chech ctrl+z 
+            jobs       run it
+-------------------resume job in background--------------------------
+sleep 10s 
+ctrl+z
+bg
+
+------------------------------how to run script in background--------------------------------
+bash myscript.sh
+bash <filename>.sh
+
+
+
+---------------------newtworking info
+
+ifconfig
+ping www.google.com
+ping localhost.com
+------------------server or website is accessble or not------------------
+talnet  ip port
+-----------------------check port is open or not on our server ---------------
+netstat -putan  | grep 80
+
+---------------------trace all hubs in nw path to reach website------------------
+
+traceroute www.google.com
+
+
+-------------restrt linux server-------------
+
+reboot
+-------stop server------------
+shutdown for shutdown
+
+
+------------user creation------------
+useradd raj1
+id raj1
+
+
+----------password for user----------------
+password raj1 ********************
+----------------------------------create new group on linux----------------------------
+groupadd
+id groupname
+
+
+-----------delete user or group--------------
+userdel <username>
+groupdel <groupname>
+
+
+--------------------how to schedule a script particular date and time
+at 
+crontab
+at 05:10 PM 
+at> echo "At command ex"> filename.txt   it will write on time 
+
+ls > filenames.location
+hostname >> filesname.location 
