@@ -1,0 +1,66 @@
+** IMP ***
+
+nano /etc/bash.bashrc  It opens the ROOT bash file to add alias (etc - editable text configuration)
+
+
+
+------------------------------------------------------------------------
+git init
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+git add <filename>
+git commit -m "message>
+git status  to check any changes in the repo
+git log   to check the old commits history
+git branch to check the git branch
+git log  Its shwos all the logs we commited
+git show <log id>:<classname> It will show the particular commit changes in class
+git restore    It will restore the changes to present commit 
+git restore --staged .
+git reset soft HEAD^ keep the changes and remove the commit 
+git reset hard HEAD^ remove the changes and remove the commit
+git log -- stat   The git log --stat command provides a detailed summary of the commit history, including statistics about the changes made in each commit. It shows the number of files modified, the number of lines added, and the number of lines deleted for each commit.
+git log -p -1
+git log -p -2 It will show the changes in particular commit
+git log --pretty=oneline  This makes each commits in corresponding single line
+git log --pretty=format:"%h -%an %ar:%s"  It will show log as per your need 
+                        %h - Hashcode , %an author name(user name) %ar timings %s String
+git log --pretty=format:"%ar" We can individual also
+git log -S "Give some word from the code" It will show when and which commit you written
+git log --author="username" it will show log of given username 
+git log --since="2024-12-28"  Deials of log
+git add -A Add all
+git add -u ignore untracked files
+git pull to fetch the latest files from remote Repository
+git push to push the latest changes into remore Repository
+git diff  To see the diffrence between current changes with last changes (commited versions)
+git merge 
+git checkout <branchname>
+git confilt 
+git branch -d <branchname>
+git branch -D <branchname> force delete
+git checkout -b <branch_name> Checkout current branch and change to other branch
+git reset hard   remove the changes
+git reset soft keep the changes
+git push origin your-branch-name
+git fork
+
+REMOTE 
+Create Repository by loging in account once account creted run below commits the code will reflect in remote 
+git remote add origin https://github.com/loginmycode/git-lear.git
+git branch -M main
+git push -u origin main
+
+feature/add-user-auth   Feature branches:
+bugfix/fix-login-error  Bug fixes:
+hotfix/security-patch  Hotfixes:
+
+# Ignore all log files
+*.log
+git log --oneline --graph --all
+git clone <repository_url>
+
+Git pages Live
+We can make live repo
+Setting-> Pages -> Branch -> main /root (save it and take the link and check in browser)
+
