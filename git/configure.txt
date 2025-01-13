@@ -1,0 +1,16 @@
+git config :
+git config --global user.name <username>
+git config --global user.email "emailId"
+
+
+git init: Initialize a new Git repository in your project folder
+
+git commit -m "Your commit message" :- Save staged changes into the repository
+
+git log: View commit history
+
+git log --oneline  show curret branch with details 
+
+
+
+

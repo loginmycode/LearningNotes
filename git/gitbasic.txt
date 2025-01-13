@@ -2,8 +2,6 @@
 
 nano /etc/bash.bashrc  It opens the ROOT bash file to add alias (etc - editable text configuration)
 
-
-
 ------------------------------------------------------------------------
 git init
 git config --global user.name "Your Name"
@@ -29,7 +27,7 @@ git log --pretty=format:"%ar" We can individual also
 git log -S "Give some word from the code" It will show when and which commit you written
 git log --author="username" it will show log of given username 
 git log --since="2024-12-28"  Deials of log
-git add -A Add all
+git add -A Add    Add all the files in the Repository
 git add -u ignore untracked files
 git pull to fetch the latest files from remote Repository
 git push to push the latest changes into remore Repository

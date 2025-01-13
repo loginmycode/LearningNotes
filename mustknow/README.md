@@ -5,8 +5,9 @@ Java (versions 8-17)
     1. Java Language Fundamentals
 
         Data Types and Variables
-            Primitive Type
-            Non-Primitive (Reference) Data Types
+            Primitive Data Type: such as boolean, char, int, short, byte, long, float, and double. The Boolean with uppercase B is a wrapper class for the primitive data type boolean in Java.
+            Non-Primitive Data Type or Object Data type: such as String, Array, etc.
+
         Operators and Control Flow
         Object-Oriented Programming (OOP)
         Classes and Objects
@@ -131,3 +132,8 @@ Ide's
 STS
 Visual strudio code
 IntelliJ
+
+
+====================================================================================================================
+
+new comments
