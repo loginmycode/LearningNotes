@@ -1,5 +1,5 @@
 ls --help  It gives which command will support and availble in terminal
-
+lscpu | more -> It shows architecture of whole system
 
 sudo apt update
 

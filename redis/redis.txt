@@ -1,0 +1,74 @@
+REDIS - REMOTE DIRECTORY SERVER
+
+What is REDIS ? 
+-> Redis is data structure store that can be used as a database, cache and message broker.
+-> Redis supports various data structure such 
+    String 
+    Hashes
+    Lists
+    sets
+    sorted sets
+    bitmaps
+    hyperloglogs
+    geospetical indexes.
+
+
+Redis (Remote Dictionary Server) is an in-memory data structure store that can be used as a database, cache, and message broker. Here are its key features:
+
+1. Data Structure Support
+Redis supports a variety of data structures, including:
+Strings: Simple key-value pairs.
+Lists: Collections of strings sorted by insertion order.
+Sets: Unordered collections of unique strings.
+Sorted Sets: Sets with a score associated with each element, enabling range queries.
+Hashes: Key-value pairs within a single key, useful for representing objects.
+Bitmaps and HyperLogLogs: For approximate data structures and bit-level operations.
+Streams: For managing log data or event streams.
+2. In-Memory Storage
+Redis operates primarily in memory, providing extremely low latency and high-speed data access.
+3. Persistence
+Supports RDB (Redis Database Backup) snapshots and AOF (Append-Only File) logs for data persistence.
+4. High Availability
+Provides replication with master-slave architecture.
+Enables high availability through Redis Sentinel, monitoring and automatic failover.
+5. Scalability
+Redis Cluster allows horizontal scaling by distributing data across multiple nodes.
+6. Pub/Sub Messaging
+Supports publish/subscribe messaging for real-time communication between applications.
+7. Scripting
+Redis supports Lua scripting for atomic execution of complex operations.
+8. Transactions
+Provides atomic transactions with MULTI, EXEC, and DISCARD commands.
+9. TTL (Time to Live)
+Keys can have an expiration time, making it a powerful tool for caching.
+10. Modules
+Supports extensions via modules like RedisGraph, RedisJSON, and RedisBloom, adding more capabilities.
+11. Lightweight and Fast
+Built-in optimizations ensure high performance, handling millions of requests per second.
+12. Geospatial Support
+Allows storage, querying, and manipulation of geospatial data.
+13. Security
+Offers authentication, ACLs (Access Control Lists), and encryption for secure usage.
+14. Compatibility
+Works with multiple programming languages through client libraries.
+Redis is widely used in scenarios like caching, real-time analytics, chat applications, and leaderboards due to its versatility and speed.
+------------------------
+
+commands: 
+
+sudo systemctl status redis
+redis-cli
+sudo systemctl start redis  to start the service
+sudo systemctl stop redis  to stop the service
+which redis-server  path
+sudo apt install redis-server -y
+sudo apt udate
+dpkg -l | grep redis  The command is used to check if Redis is installed on your Ubuntu system and to list any Redis-related packages.
+
+WHO AMI 
+USERS
+time
+
+get any help using
+
+help@<use tab>

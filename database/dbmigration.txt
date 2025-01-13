@@ -1,0 +1,19 @@
+Database migration 
+                : is a structured process of changing a database's structure, data, or both. 
+                This is often done to update the schema, move to a new database system, 
+                or improve performance and scalability.
+
+Planning :- Identify the goals of migration (eg, scchema cahange, system updgrade.or performance optimizations)
+
+            Analyze the source and target database Compatibility
+            Plan downtime or increamental migration for minimal service disruption
+
+Backup : -
+          Take a full backup 
+
+scheme migration :-
+          Update the database schema
+        *Use data base tools like
+           - Flyway or Liquibase  for schema changes
+           - Rails migration for ruby on rails project
+           - Django migration for python projects

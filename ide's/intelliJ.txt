@@ -1,0 +1,7 @@
+add plugins
+InlineProblems  It will show the any problem in the current file 
+.env file support
+AsciiDoc
+Grazie Pro  gramaticall mistakes and suggestion
+JPA  Buddy it will improve productivity
+
