@@ -13,7 +13,8 @@ Backup : -
 
 scheme migration :-
           Update the database schema
-        *Use data base tools like
+          
+          Use data base tools like
            - Flyway or Liquibase  for schema changes
            - Rails migration for ruby on rails project
            - Django migration for python projects

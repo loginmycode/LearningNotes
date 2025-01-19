@@ -62,3 +62,16 @@ Git pages Live
 We can make live repo
 Setting-> Pages -> Branch -> main /root (save it and take the link and check in browser)
 
+========================================================================================
+Use git add . if:
+You want to stage changes only in your current working directory.
+You’re working on a specific folder or area of the project.
+
+Use git add -A if:
+You want to stage all changes across the repository, including deletions.
+You’re preparing to make a comprehensive commit.
+
+
+
+
+
