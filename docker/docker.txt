@@ -1,0 +1,19 @@
+Docker  : -Docker is a platform that allows you to develop, ship, and run applications inside lightweight, portable containers.
+            A container is a standardized unit of software that packages up the code, runtime, libraries, and system dependencies required for an application to run. 
+            This makes it easy to deploy and run applications consistently across different environments, such as development, testing, and production.
+
+
+
+Main components of Docker 
+
+Docker File  It is simple file instruction to build image
+Docker Image   Its single file with all the libraries and dependencies to run the program
+Docker Container  Instance of an image
+Docler Registry A Docker registry is a central repository for string and distributing docker images
+
+Docker hub :Docker Hub is a cloud-based registry service provided by Docker for storing and sharing container images. 
+    It acts as a central repository where developers can upload and download pre-built images of applications, tools, and libraries.
+    These images are used to create Docker containers.
+    Some key features of Docker Hub include:
+
+WSL - Window subsystem for Linux
