@@ -72,3 +72,48 @@ time
 get any help using
 
 help@<use tab>
+
+Add Dependcies: 
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-redis</artifactId>
+    <version>3.4.1</version>
+</dependency>
+
+Application.properties:
+
+spring.redis.host: localhost
+spring.redis.port: <write the port from terminal redis-cli>
+
+
+Create bean
+
+@Bean 
+public RestTemplate redisTemplate(RedisConnectionFactory factory)
+{
+    redisTemplate redisTemplate = New redisTemplate();
+    redisTemplate.setConnectionFactory(factory);
+    redisTemplate.setKeySerializer(new StringRedisSerializer());
+    redisTemplate.setValueSerializer(new StringRedisSerializer());
+
+    retrur RestTemplate;
+
+}
+
+
+Code part
+
+@Test 
+public void testRedisService(){
+
+    redisTemplate.opsForValue().set("email","abc@gmail.com");
+    object email = redisTemplate.opsForValue().get("email");
+
+    
+}
+
+
+Check 
+Redis-cloud
