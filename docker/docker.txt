@@ -17,3 +17,6 @@ Docker hub :Docker Hub is a cloud-based registry service provided by Docker for 
     Some key features of Docker Hub include:
 
 WSL - Window subsystem for Linux
+
+
+lscpu | more : It will show the details

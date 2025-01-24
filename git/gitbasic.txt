@@ -72,6 +72,30 @@ You want to stage all changes across the repository, including deletions.
 You’re preparing to make a comprehensive commit.
 
 
+ commit without message
+git commit --allow-empty-message -m ""
+
+change last message 
+git commit --amend -m "write new message"
+
+push
+git push origin -u main
+
+force push
+git push origin -f main
+
+
+--------------------------------
+in gitconfig file
+
+[user]
+	name = loginmycode
+	email = rajreddy402@gmail.com
+[push]
+	autoSetupRemote = true
+------------------------------------
+
+
 
 
 
