@@ -10,4 +10,4 @@
     - Right join
     - Full join
 
-![join image]:joinindatabase\sql-join-types.png
+![join image]:joinindatabase\sql-join-types.png 
